@@ -1,0 +1,19 @@
+{{define "header"}}
+<html lang="en">
+<head>
+	<title>Slackish{{if .Title}} :: {{.Title}}{{end}}</title>
+	
+	<!-- Google sign in -->
+	<meta name="google-signin-client_id" content="83143033304-2rufnrd9a7nhhch64q002bgbs1dp9glk.apps.googleusercontent.com">
+	<meta name="viewport" content="user-scalable=no">
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="initial-scale=1.0">
+
+	{{/* Include CSS references from .CSS []string */}}
+	{{range .CSS}}
+	<link href="{{.}}" rel="stylesheet">
+	{{end -}}
+</head>
+<body>
+	{{template "nav" .}}
+{{end}}

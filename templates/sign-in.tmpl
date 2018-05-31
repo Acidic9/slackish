@@ -1,0 +1,112 @@
+{{define "sign-in"}}
+<div class="modal signin-container">
+	<div class="modal-background"></div>
+	<div class="modal-content">
+		<div class="box">
+			<h3 class="title is-3">Sign in with Social Media</h3>
+			<!--<div class="g-signin2" data-onsuccess="onSignIn"></div>-->
+			<a class="button google-signin" data-onsuccess="onSignIn">
+				<span class="icon is-small">
+					<i class="fa fa-google" aria-hidden="true"></i>
+				</span>
+				<span>Sign in with Google</span>
+			</a>
+			<a class="button twitter-signin">
+				<span class="icon is-small">
+					<i class="fa fa-twitter" aria-hidden="true"></i>
+				</span>
+				<span>Sign in with Twitter</span>
+			</a>
+			<a class="button github-signin">
+				<span class="icon is-small">
+					<i class="fa fa-github" aria-hidden="true"></i>
+				</span>
+				<span>Sign in with Github</span>
+			</a>
+
+			<div class="labeled-divider-container">
+				<span class="labeled-divider-inner">OR</span>
+			</div>
+
+			<h3 class="title is-3">Sign in with Email</h3>
+
+			<form id="signin-form">
+				<div class="field">
+					<label class="label">Email</label>
+					<p class="control">
+						<input class="input" type="email" id="signin-email" placeholder="someone@example.com">
+					</p>
+				</div>
+
+				<div class="field">
+					<label class="label">Password</label>
+					<p class="control">
+						<input class="input" type="password" id="signin-password" placeholder="•••••••••">
+					</p>
+				</div>
+
+				<div class="field">
+					<p class="control">
+						<input class="button is-primary" type="submit" id="signin-submit" value="Sign in">
+					</p>
+				</div>
+
+				<div class="field">
+					Don't have an account? <a id="switch-to-signup">Create an account</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<button class="modal-close"></button>
+</div>
+
+<div class="modal signup-container">
+	<div class="modal-background"></div>
+	<div class="modal-content">
+		<div class="box">
+			<form id="signup-form">
+				<h3 class="title is-3">Create a new account</h3>
+
+				<div class="field">
+					<label class="label">Display Name</label>
+					<p class="control">
+						<input class="input" type="text" id="signup-display-name" placeholder="JohnDoe">
+					</p>
+				</div>
+
+				<div class="field">
+					<label class="label">Email</label>
+					<p class="control">
+						<input class="input" type="email" id="signup-email" placeholder="someone@example.com">
+					</p>
+				</div>
+
+				<div class="field">
+					<label class="label">Password</label>
+					<p class="control">
+						<input class="input" type="password" id="signup-password" placeholder="•••••••••">
+					</p>
+				</div>
+
+				<div class="field">
+					<label class="label">Retype Password</label>
+					<p class="control">
+						<input class="input" type="password" id="signup-retype-password" placeholder="•••••••••">
+					</p>
+				</div>
+
+				<div class="field">
+					<p class="control">
+						<input class="button is-primary" type="submit" id="signup-submit" value="Create account">
+					</p>
+				</div>
+
+				<div class="field">
+					Already have an account? <a id="switch-to-signin">Sign in instead</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<button class="modal-close"></button>
+</div>
+{{end}}

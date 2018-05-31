@@ -1,0 +1,20 @@
+{{define "footer"}}
+	<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+	<script src="https://apis.google.com/js/platform.js"></script>
+
+	{{/* Include CSS references from .CSS []string */}}
+	{{range .JS}}
+	<script src="{{.}}"></script>
+	{{end}}
+	<script>
+		{{range .ErrorMessages}}
+		alertify.closeLogOnClick(true).delay(10000).error({{.}});
+		{{end}}
+
+		{{range .SuccessMessages}}
+		alertify.closeLogOnClick(true).delay(10000).success({{.}});
+		{{end}}
+	</script>
+</body>
+</html>
+{{end}}

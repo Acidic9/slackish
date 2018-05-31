@@ -1,0 +1,31 @@
+[http]
+listen_port = 3000
+domain = "http://localhost:3000"
+
+[database]
+address = "localhost:3306"
+name = "slackish"
+username = "slackish"
+password = "v1Cd1%*BdW73jk5DbOj#^9&E"
+
+[signin_api]
+[signin_api.google]	
+client_id = "83143033304-2rufnrd9a7nhhch64q002bgbs1dp9glk.apps.googleusercontent.com"
+client_secret = "M3aYxOuLtf1jPXmCHV2O_QQY"
+
+[signin_api.twitter]
+api_key = "JSwNP7KCFgViWbd2O8epzGThN"
+api_secret = "UENoyiY9aOKTKwMyrLVcdBn1nGzG78BUH2AAP0S8FFo8FSSRLC"
+
+[signin_api.github]
+client_id = "0592223874a6c4874d48"
+client_secret = "2e4b4b7d6709178043da13f0bdaa0df924e293f6"
+
+[misc]
+reserved_slacks = [
+	"faq",
+	"home",
+	"do",
+	"settings",
+	"profile"
+]

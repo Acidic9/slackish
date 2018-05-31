@@ -1,0 +1,17 @@
+body {
+	background-color: #fbfbfb
+}
+
+.clear {
+	clear: both;
+	float: none;
+}
+
+.container {
+	width: 92%;
+	padding: 12px 0;
+}
+
+.hidden {
+	display: none;
+}

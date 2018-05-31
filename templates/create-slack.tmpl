@@ -1,0 +1,65 @@
+{{template "header" .}}
+	<div class="container">
+		<div class="box">
+			<form id="create-slack-form">
+				<h3 class="title is-3">Create New Slack</h3>
+
+				<div class="field">
+					<label class="label" for="slack-name" title="The slack name will be used to identify the slack">Slack Name <span id="slack-path" class="subtitle is-6"></span></label>
+					<p class="control">
+						<input class="input" type="text" placeholder="Hello World" id="slack-name" name="slack-name" value="{{.Slack}}">
+					</p>
+				</div>
+
+				<div class="field">
+					<label class="label" for="slack-description" title="A short description describing your slack's topic">Slack Description <span class="subtitle is-6">optional</span></label>
+					<p class="control">
+						<input class="input" type="text" placeholder="A brief description about my slack." id="slack-description" name="slack-description">
+					</p>
+				</div>
+
+				<div class="field">
+					<label class="label" title="This will be displayed as a logo on the top of your slack's page">Slack Branding Image <span class="subtitle is-6">optional</span></label>
+					<p class="control">
+						<label for="slack-img" class="button is-success">
+							<span class="icon is-small">
+								<i class="fa fa-upload" aria-hidden="true"></i>
+							</span>
+							<span>Upload</span>
+						</label>
+						<p class="help" id="slack-img-nothing-selected">No file selected</p>
+						<span class="tag hidden" id="slack-img-tag">
+							<span></span>
+							<button class="delete is-small" onclick="$(this).parent().hide(); $('#slack-img-nothing-selected').show(); $('slack-img').val('')"></button>
+						</span>
+						<input class="hidden" type="file" id="slack-img" name="slack-img" accept="image/*">
+					</p>
+				</div>
+
+				<div class="field">
+					<label class="label" title="This will be displayed behind the branding image for the slack">Slack Banner Image <span class="subtitle is-6">optional</span></label>
+					<p class="control">
+						<label for="slack-banner-img" class="button is-success">
+							<span class="icon is-small">
+								<i class="fa fa-upload" aria-hidden="true"></i>
+							</span>
+							<span>Upload</span>
+						</label>
+						<p class="help" id="slack-banner-img-nothing-selected">No file selected</p>
+						<span class="tag hidden" id="slack-banner-img-tag">
+							<span></span>
+							<button class="delete is-small" onclick="$(this).parent().hide(); $('#slack-banner-img-nothing-selected').show(); $('slack-banner-img').val('')"></button>
+						</span>
+						<input class="hidden" type="file" id="slack-banner-img" name="slack-banner-img" accept="image/*">
+					</p>
+				</div>
+
+				<div class="field">
+					<p class="control">
+						<input class="button is-primary" type="submit" id="signup-submit" value="Create slack">
+					</p>
+				</div>
+			</form>
+		</div>
+	</div>
+{{template "footer" .}}

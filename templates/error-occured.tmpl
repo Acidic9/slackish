@@ -1,0 +1,12 @@
+{{template "header" .Header}}
+	<div class="container">
+		<div class="box has-text-centered">
+			<h3 class="title is-3">An error occured</h3>
+			<h5 class="subtitle is-5">We've been notified and it should be fixed soon.</h5>
+			{{if ne .ReturnPath ""}}
+			<a href="{{.ReturnPath}}" class="button">Go Back</a>
+			{{end}}
+			<a href="/" class="button">Home Page</a>
+		</div>
+	</div>
+{{template "footer" .}}

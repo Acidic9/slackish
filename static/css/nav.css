@@ -1,0 +1,80 @@
+.nav {
+	padding: 0 4%;
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.22);
+	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.22);
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.22);
+}
+
+.nav-title, .nav-subtitle {
+	margin-bottom: 0 !important;
+}
+
+.nav-title {
+	opacity: 0.94;
+}
+
+.nav-subtitle {
+	margin: 10px 0 0 6px;
+	opacity: 0.88;
+}
+
+.drop-down-menu {
+    background-color: white;
+    position: absolute;
+    top: 52px;
+    border-color: rgba(0,0,0,.2);
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
+    outline: none;
+    overflow: hidden;
+	display: none;
+}
+
+.drop-down-menu li {
+    padding: 6px 10px;
+	border-bottom: 1px solid #f6f6f6;
+}
+
+.drop-down-menu a:last-child > li {
+	border-bottom: none;
+}
+
+.google-signin, .google-signin:hover, .google-signin:active {
+	background-color: #DF4A33;
+	border-color: #B23B28;
+	color: #fff !important;
+}
+
+.google-signin:hover {
+	background-color: #d3442e !important;
+}
+
+/*.facebook-signin, .facebook-signin:hover, .facebook-signin:active {
+	background-color: #3B5998;
+	border-color: #38548c;
+	color: #fff !important;
+}
+
+.facebook-signin:hover {
+	background-color: #324d84 !important;
+}*/
+
+.twitter-signin, .twitter-signin:hover, .twitter-signin:active {
+	background-color: #16b3e6;
+	border-color: #169fcc;
+	color: #fff !important;
+}
+
+.twitter-signin:hover {
+	background-color: #2fafda !important;
+}
+
+.github-signin, .github-signin:hover, .github-signin:active {
+	background-color: #444444;
+	border-color: #363636;
+	color: #fff !important;
+}
+
+.github-signin:hover {
+	background-color: #3a3a3a !important;
+}
